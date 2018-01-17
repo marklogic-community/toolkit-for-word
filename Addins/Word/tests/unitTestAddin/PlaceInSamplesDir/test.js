@@ -130,7 +130,7 @@ function initPage()
 /* ================ BEGIN ADD CONTROLS TESTS ================================*/
 function addControlWithImage()
 {
-       var pic = "/ackbar.jpg";
+       var pic = "/pete_aven.jpg";
        var config = MLA.getConfiguration();
        var fullurl= config.url;
        var picuri = fullurl + "/download-support.xqy?uid="+pic;

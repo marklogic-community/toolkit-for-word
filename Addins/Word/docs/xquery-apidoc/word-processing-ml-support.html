@@ -736,7 +736,7 @@ xquery version "1.0-ml";
 import module namespace ooxml= "http://marklogic.com/openxml" 
           at "/MarkLogic/openxml/word-processing-ml-support.xqy";
 
-let $img:= fn:doc("/ackbar.jpg")/node()
+let $img:= fn:doc("/pete_aven.jpg")/node()
 return ooxml:base64-opc-format(ooxml:binary-to-base64-string($img))
 
 =&gt; 
@@ -829,12 +829,12 @@ xquery version "1.0-ml";
 import module namespace ooxml= "http://marklogic.com/openxml" 
           at "/MarkLogic/openxml/word-processing-ml-support.xqy";
 
-let $img:= fn:doc("/ackbar.jpg")/node()
+let $img:= fn:doc("/pete_aven.jpg")/node()
 let $binstring :=   ooxml:binary-to-base64-string($img)
 return ooxml:base64-string-to-binary($binstring)
 
 =&gt;
-<img src="images/ackbar.jpg"/> 
+<img src="images/pete_aven.jpg"/> 
   </pre>
   
             </div>
@@ -920,7 +920,7 @@ xquery version "1.0-ml";
 import module namespace ooxml= "http://marklogic.com/openxml" 
           at "/MarkLogic/openxml/word-processing-ml-support.xqy";
 
-let $img:= fn:doc("/ackbar.jpg")/node()
+let $img:= fn:doc("/pete_aven.jpg")/node()
 return ooxml:binary-to-base64-string($img)
 
 =&gt;
